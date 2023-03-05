@@ -19,6 +19,10 @@ const komennot = [
     {
         name: "exit",
         description: "Lopettaa botin."
+    },
+    {
+        name: "tyhjennä",
+        description: "Tyhjentää chatin."
     }
 ]
 
