@@ -5,7 +5,9 @@
   "main": "dist/bot.js",
   "type": "module",
   "scripts": {
-    "start:dev": "nodemon dist/bot.js"
+    "start:dev": "npm run build && node dist/rekisteroi-komennot.js && nodemon dist/bot.js",
+    "build": "npm run deleteDistFolder && tsc -p ./",
+    "deleteDistFolder": "node utils/deleteDistFolder.js"
   },
   "keywords": [],
   "author": "",
